@@ -7,7 +7,7 @@ Next, you will have use CLI interface to configure IPv6. You can open the CLI in
 
 Then input the following commands in the CLI interface on the right. Please note that **[WAN Interface]** and **[LAN Interface]** represent `Network -> Interface` for the external and local network interface names. Please adjust according to the definitions in the Fortigate admin interface.
 - Configure the external network interface (WAN)
-```conf=
+```conf
 config sys int
    edit [WAN Interface]
       config ipv6
@@ -24,7 +24,7 @@ When `autoconf` is `enable`, this sets the `interface` as **`SLAAC client`**.
 
 - Configure the local network interface
 If there are multiple local network interfaces, you will have to configure each of them.
-```conf=
+```conf
 config sys int
    edit [LAN Interface]
       config ipv6
@@ -62,7 +62,7 @@ This can be set through the admin interface. You can select either your ISP (CHT
 
 - Set up an IPv6 DHCP Server
 If there are several local network interfaces, you need to configure each of them.
-```conf=
+```conf
 config sys dhcp6 server
    edit 1
       set interface "[LAN Interface]"
