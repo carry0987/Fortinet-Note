@@ -1,0 +1,392 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>IPv6 · Fortinet-Note</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="carry0987">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="FactoryReset.html" />
+    
+    
+    <link rel="prev" href="ChangeMACAddress.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    FortiGate
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="ChangeMACAddress.html">
+            
+                <a href="ChangeMACAddress.html">
+            
+                    
+                    Change MAC Address
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="IPv6.html">
+            
+                <a href="IPv6.html">
+            
+                    
+                    IPv6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="FactoryReset.html">
+            
+                <a href="FactoryReset.html">
+            
+                    
+                    Factory Reset
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >IPv6</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#ipv6-for-fortigate-50e"><b></b>IPv6 for FortiGate-50E</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="ipv6-for-fortigate-50e"><a name="ipv6-for-fortigate-50e" class="anchor-navigation-ex-anchor" href="#ipv6-for-fortigate-50e"><i class="fa fa-link" aria-hidden="true"></i></a>IPv6 for FortiGate-50E</h2>
+<p>From the Fortigate admin interface, you will not find a complete IPv6 management interface, only the IPv6 function switch. To use IPv6, start by switching this on.
+<img src="https://i.imgur.com/AEccpOo.png" alt=""></p>
+<p>Next, you will have use CLI interface to configure IPv6. You can open the CLI interface from the button in the top right corner of the admin interface.
+<img src="https://i.imgur.com/JRvwWHU.png" alt=""></p>
+<p>Then input the following commands in the CLI interface on the right. Please note that <strong>[WAN Interface]</strong> and <strong>[LAN Interface]</strong> represent <code>Network -&gt; Interface</code> for the external and local network interface names. Please adjust according to the definitions in the Fortigate admin interface.</p>
+<ul>
+<li><p>Configure the external network interface (WAN)</p>
+<pre class="language-"><code class="lang-conf">config sys int
+ edit [WAN Interface]
+    config ipv6
+       set ip6-mode pppoe
+       set ip6-allowaccess ping
+       set dhcp6-prefix-delegation enable
+       set autoconf enable
+    end
+ next
+end
+</code></pre>
+<p>When <code>autoconf</code> is <code>enable</code>, this sets the <code>interface</code> as <strong><code>SLAAC client</code></strong>.
+<code>dhcp6-prefix-delegation</code> enables <code>DHCP-PD</code>, to communicate with ISP to get prefix information.</p>
+</li>
+<li><p>Configure the local network interface
+If there are multiple local network interfaces, you will have to configure each of them.</p>
+<pre class="language-"><code class="lang-conf">config sys int
+ edit [LAN Interface]
+    config ipv6
+       set ip6-mode delegated
+       set ip6-send-adv enable
+       set ip6-manage-flag disable
+       set ip6-other-flag enable
+       set ip6-upstream-interface &quot;[WAN Interface]&quot;
+       set ip6-subnet ::1/64
+       config ip6-delegated-prefix-list
+          edit 1
+             set upstream-interface &quot;[WAN Interface]&quot;
+             set autonomous-flag enable
+             set onlink-flag enable
+             set subnet ::/64
+          next
+       end
+    end
+ next
+end
+</code></pre>
+</li>
+<li><p>Set IPv6 DNS settings
+This can be set through the admin interface. You can select either your ISP (CHT) or Google for your IPv6 DNS Server, both offer quick response times.</p>
+<p>CHT:
+Primary DNS server IP(ipv6): <code>2001:b000:168::1</code>
+Secondary DNS server IP(ipv6): <code>2001:b000:168::2</code></p>
+<p>Google:
+Primary DNS server IP(ipv6): <code>2001:4860:4860::8888</code>
+Secondary DNS server IP(ipv6): <code>2001:4860:4860::8844</code></p>
+</li>
+</ul>
+<p><img src="https://i.imgur.com/PEIxolT.png" alt=""></p>
+<ul>
+<li><p>Set up an IPv6 DHCP Server
+If there are several local network interfaces, you need to configure each of them.</p>
+<pre class="language-"><code class="lang-conf">config sys dhcp6 server
+ edit 1
+    set interface &quot;[LAN Interface]&quot;
+    set ip-mode delegated
+    set dns-service default
+    set upstream-interface &quot;[WAN Interface]&quot;
+ next
+end
+</code></pre>
+<p>Now you should be able to get the IPv6 address automatically from CHT, but after some testing you might find that the Domain Name still can&apos;t be queried correctly. A Google search shows that the IPv6 policy setting was missed.</p>
+</li>
+<li><p>Set up IPv6 policies
+Add a policy for IPv6 local network to external network. In fact, you can adjust the policy according to your needs. The following example is set to accept all.</p>
+</li>
+</ul>
+<p><img src="https://i.imgur.com/zM6BOUW.png" alt=""></p>
+<p>Wait for <strong>5~15</strong> seconds.
+Then test with:</p>
+<pre class="language-"><code class="lang-linux">diag ipv6 address list
+</code></pre>
+<p>Note if the LAN interface has obtained an IPv6 address starting with 2001.
+If not, please reboot the FGT.
+Then check again with diag.</p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; carry0987 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Last Modified : 
+2024-01-16 06:06:34
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ChangeMACAddress.html" class="navigation navigation-prev " aria-label="Previous page: Change MAC Address">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="FactoryReset.html" class="navigation navigation-next " aria-label="Next page: Factory Reset">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"IPv6","level":"1.2.2","depth":2,"next":{"title":"Factory Reset","level":"1.2.3","depth":2,"path":"FortiGate/FactoryReset.md","ref":"./FortiGate/FactoryReset.md","articles":[]},"previous":{"title":"Change MAC Address","level":"1.2.1","depth":2,"path":"FortiGate/ChangeMACAddress.md","ref":"./FortiGate/ChangeMACAddress.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","-lunr","-search","-sharing","-page-toc-button","search-plus","anchor-navigation-ex","flexible-alerts","code","prism","-highlight","tbfed-pagefooter","hide-element"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy carry0987","modify_label":"Last Modified : ","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["eval-js"]},"github":{"url":"https://github.com/carry0987/Fortinet-Note"},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"flat","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"carry0987","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Fortinet-Note","language":"en","gitbook":"*","defaultDescription":"Comprehensive user guide and personal notes on various Fortinet products. Documentation and tutorials compiled using Gitbook, to provide insights and aid in effective utilization of Fortinet solutions","description":"Comprehensive user guide and personal notes on various Fortinet products. Documentation and tutorials compiled using Gitbook, to provide insights and aid in effective utilization of Fortinet solutions"},"file":{"path":"FortiGate/IPv6.md","mtime":"2024-01-16T06:06:34.592Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-01-16T06:07:06.675Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
