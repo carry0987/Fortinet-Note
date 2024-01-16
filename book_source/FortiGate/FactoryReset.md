@@ -3,5 +3,5 @@
 1. Connect to the FortiGate using a console cable or SSH.
 2. Enter the following commands:
 ```conf
-exec router restart
+execute factoryreset
 ```
