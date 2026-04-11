@@ -1,0 +1,25 @@
+.features {
+    display: flex;
+    align-items: center;
+    padding: 3rem 0 4rem;
+    width: 100%;
+}
+
+.featureCol {
+    display: flex;
+}
+
+.featureCard {
+    background: linear-gradient(180deg, rgba(255, 252, 248, 0.96), rgba(255, 246, 239, 0.88));
+    border: 1px solid rgba(123, 30, 23, 0.12);
+    border-radius: 1.25rem;
+    box-shadow: 0 18px 40px rgba(59, 32, 15, 0.08);
+    height: 100%;
+    padding: 1.5rem 1rem;
+    width: 100%;
+}
+
+.featureSvg {
+    height: 160px;
+    width: 160px;
+}

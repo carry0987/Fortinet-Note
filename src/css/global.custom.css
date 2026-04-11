@@ -1,0 +1,62 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+    --ifm-color-primary: #9f2f22;
+    --ifm-color-primary-dark: #8f2a1e;
+    --ifm-color-primary-darker: #87271c;
+    --ifm-color-primary-darkest: #702016;
+    --ifm-color-primary-light: #af3426;
+    --ifm-color-primary-lighter: #b83829;
+    --ifm-color-primary-lightest: #cb4835;
+    --ifm-background-color: #fffaf5;
+    --ifm-font-family-base: "Avenir Next", "Segoe UI", sans-serif;
+    --ifm-heading-font-family: "Avenir Next", "Segoe UI", sans-serif;
+    --ifm-code-font-size: 95%;
+    --ifm-code-padding-horizontal: 0.25em;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+    --ifm-color-primary: #f08d5d;
+    --ifm-color-primary-dark: #ed7b44;
+    --ifm-color-primary-darker: #eb7238;
+    --ifm-color-primary-darkest: #d95a18;
+    --ifm-color-primary-light: #f39f76;
+    --ifm-color-primary-lighter: #f5a883;
+    --ifm-color-primary-lightest: #f9c2a9;
+    --ifm-background-color: #1a1412;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* You can add custom styles here. */
+a.breadcrumbs__link {
+    vertical-align: top;
+}
+
+pre.prism-code:not(:has(> code)) {
+    border-radius: 0;
+}
+
+pre > code span[class*="codeLineContent"] {
+    padding-right: 0;
+}
+
+.button.button--outline {
+    border-color: rgba(255, 255, 255, 0.8);
+    color: #fff7f1;
+}
+
+.button.button--outline:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+}
+
+.footer {
+    background: #261410;
+}
